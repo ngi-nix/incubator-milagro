@@ -5,8 +5,7 @@ Project page:
 https://github.com/apache/incubator-milagro
 
 - Crypto-C: \
-It's now working using some recommended cmake flags.
-
+It's done.
 
 - Crypto-JS: \
 I'm having problems with NPM and node2nix to properly install the libs.
