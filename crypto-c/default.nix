@@ -2,7 +2,7 @@ let
 
   pkgs = import <nixpkgs> {};
 
-  inherit (pkgs) stdenv fetchgit lib cmake doxygen python39Packages python39 ;
+  inherit (pkgs) stdenv fetchgit lib cmake doxygen ;
 
   AMCL = stdenv.mkDerivation rec {
     pname = "apache-incubator-milagro-crypto-c";
@@ -14,7 +14,7 @@ let
   
     phases = [ "installPhase" ];
 
-    buildInputs = [ cmake doxygen python39Packages.cffi python39 ];
+    buildInputs = [ cmake doxygen ];
   
     installPhase = ''
       mkdir -p $out/target/build
