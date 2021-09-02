@@ -18,7 +18,7 @@ let
   
     installPhase = ''
       mkdir -p $out/target/build
-      cp -r $src/* $out/
+      cp -r $src/. $out/
       cd $out/target/build
       cmake -D CMAKE_BUILD_TYPE=Release -D BUILD_SHARED_LIBS=ON -D AMCL_CHUNK=64 -D AMCL_CURVE="SECP256K1" -D AMCL_RSA="" -D BUILD_PYTHON=OFF -D BUILD_BLS=ON -D BUILD_WCC=OFF -D BUILD_MPIN=OFF -D BUILD_X509=OFF -DCMAKE_C_FLAGS="-fPIC" $out
       export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./
