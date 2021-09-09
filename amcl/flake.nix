@@ -43,12 +43,6 @@
         name = "apache-milagro-crypto-c-library";
         src = amcl;
         buildInputs = [ cmake doxygen ];
-        usePython = false;
-        buildBLS = true;
-        buildWCC = false;
-        buildMPIN = false;
-        buildX509 = false;
-        buildShareLib = true;
 
         installPhase = ''
           mkdir $out
