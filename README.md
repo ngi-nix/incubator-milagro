@@ -13,5 +13,5 @@ I'm having problems with NPM and node2nix to properly install the libs.
 - [Decentralized Trust Authority](https://github.com/apache/incubator-milagro-dta):
   - AMCL: Done 
   - [liboqs](https://github.com/open-quantum-safe/liboqs)(required): 
-    Done, here's the repo: https://github.com/ngi-nix/liboqs \
+    Done, here's the repo: https://github.com/ngi-nix/liboqs 
   - pqnist
